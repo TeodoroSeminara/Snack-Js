@@ -33,3 +33,22 @@ const stringLength = [];
 arrayString.forEach((x) => stringLength.push(x.length));
 
 console.log(stringLength);
+
+// 4 Dato un array di oggetti utenti, trova il primo utente con età maggiore di 30.
+
+const utenti = [
+  { nome: "Luca", eta: 25 },
+  { nome: "Anna", eta: 32 },
+  { nome: "Marco", eta: 28 },
+  { nome: "Marco", eta: 35 },
+];
+
+for (i = 0; i < utenti.length; i++) {
+  if (utenti[i].eta > 30) {
+    console.log(utenti[i]);
+    break;
+  }
+}
+
+const utentiOver30 = utenti.find((x) => x.eta > 30);
+console.log(utentiOver30);
