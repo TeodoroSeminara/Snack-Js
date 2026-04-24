@@ -26,3 +26,10 @@ const test = arrayEser2.filter((x) => x > 10);
 console.log(test);
 
 //3 Dato un array di stringhe, restituisci un array con la lunghezza di ogni parola.
+
+const arrayString = ["ciao", "javascript", "dev"];
+const stringLength = [];
+
+arrayString.forEach((x) => stringLength.push(x.length));
+
+console.log(stringLength);
