@@ -11,3 +11,9 @@ const prodotti = [
 const inStockTrue = prodotti.filter((x) => x.inStock);
 
 console.log(inStockTrue);
+
+// 2. Estrai i nomi dei prodotti
+// Dato lo stesso array prodotti, crea un array con solo i nomi dei prodotti.
+
+const onlyName = prodotti.map((x) => x.nome);
+console.log(onlyName);
