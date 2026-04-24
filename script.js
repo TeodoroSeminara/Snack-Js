@@ -52,3 +52,16 @@ for (i = 0; i < utenti.length; i++) {
 
 const utentiOver30 = utenti.find((x) => x.eta > 30);
 console.log(utentiOver30);
+
+//5 Dato un array di numeri, restituisci un array con i quadrati dei numeri dispari.
+
+const number = [1, 2, 3, 4, 5];
+const quadratiDispari = [];
+
+for (i = 0; i < number.length; i++) {
+  if (number[i] % 2 === 1) {
+    quadratiDispari.push(number[i] * number[i]);
+  }
+}
+
+console.log(quadratiDispari);
