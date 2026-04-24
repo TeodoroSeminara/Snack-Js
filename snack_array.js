@@ -29,3 +29,23 @@ const utenti = [
 const firstPremium = utenti.find((x) => x.isPremium);
 
 console.log(firstPremium);
+
+// 4. Stampa i nomi in maiuscolo
+// Usa forEach per stampare in console il nome di ogni studente con la prima lettera maiuscola (es. "Mario", "Luca", "Chiara").
+
+const studenti = [
+  { nome: "mario", eta: 20 },
+  { nome: "luca", eta: 22 },
+  { nome: "chiara", eta: 19 },
+];
+
+const primaMaiusc = studenti.map(
+  (x) => x.nome.split("").at([0]).toUpperCase() + x.nome.slice(1),
+);
+
+// studenti.forEach((stud) => {
+//   const capitalized = stud.nome.charAt(0).toUpperCase() + stud.nome.slice(1);
+//   console.log(capitalized);
+// });
+
+console.log(primaMaiusc);
