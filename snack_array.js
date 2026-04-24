@@ -1,21 +1,21 @@
 // 1. Filtra i prodotti in stock
 // Filtra solo i prodotti in magazzino (inStock: true).
 
-const prodotti = [
+const prodotti2 = [
   { nome: "Laptop", inStock: true },
   { nome: "Mouse", inStock: false },
   { nome: "Tastiera", inStock: true },
   { nome: "Monitor", inStock: false },
 ];
 
-const inStockTrue = prodotti.filter((x) => x.inStock);
+const inStockTrue = prodotti2.filter((x) => x.inStock);
 
 console.log(inStockTrue);
 
 // 2. Estrai i nomi dei prodotti
 // Dato lo stesso array prodotti, crea un array con solo i nomi dei prodotti.
 
-const onlyName = prodotti.map((x) => x.nome);
+const onlyName = prodotti2.map((x) => x.nome);
 console.log(onlyName);
 
 // 3. Trova il primo utente premium
@@ -49,3 +49,17 @@ const primaMaiusc = studenti.map(
 // });
 
 console.log(primaMaiusc);
+
+// 5. Crea un array con nome e prezzo scontato
+const prodotti = [
+  { nome: "Laptop", prezzo: 1000 },
+  { nome: "Mouse", prezzo: 25 },
+  { nome: "Tastiera", prezzo: 70 },
+];
+
+const prodottiScontati = prodotti.map((x) => ({
+  nome: x.nome,
+  prezzoScontato: x.prezzo * 0.9,
+}));
+
+console.log(prodottiScontati);
