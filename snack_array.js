@@ -17,3 +17,15 @@ console.log(inStockTrue);
 
 const onlyName = prodotti.map((x) => x.nome);
 console.log(onlyName);
+
+// 3. Trova il primo utente premium
+const utenti = [
+  { nome: "Luca", isPremium: false },
+  { nome: "Anna", isPremium: true },
+  { nome: "Marco", isPremium: false },
+  { nome: "Giada", isPremium: true },
+];
+
+const firstPremium = utenti.find((x) => x.isPremium);
+
+console.log(firstPremium);
